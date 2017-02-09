@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+myeclipseTomcatServer.ServletDasic.IEARProjectName=
+myeclipseTomcatServer.ServletDasic.altContextRoot=/ServletDasic
+myeclipseTomcatServer.ServletDasic.contextRoot=/ServletDasic
+myeclipseTomcatServer.ServletDasic.deployIsOverProject=false
+myeclipseTomcatServer.ServletDasic.deploymentPath=D\:\\Program Files\\apache-tomcat-7.0.75\\webapps\\java-ee-Web\\.metadata\\.me_tcat\\webapps\\ServletDasic
+myeclipseTomcatServer.ServletDasic.isDeployed=true
+myeclipseTomcatServer.ServletDasic.isExploded=true
+myeclipseTomcatServer.ServletDasic.isUptoDate=true
+myeclipseTomcatServer.ServletDasic.noFileCopy=false
+myeclipseTomcatServer.ServletDasic.shouldBackup=false
+myeclipseTomcatServer.ServletDasic.shouldOverwrite=false
+myeclipseTomcatServer.ServletDasic.type=WebDeployment

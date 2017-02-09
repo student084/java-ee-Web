@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ServletDasic"
+  id="myeclipse.1486643986279"
+  context-root="/ServletDasic"
+  j2ee-spec="5.0"
+  archive="ServletDasic.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

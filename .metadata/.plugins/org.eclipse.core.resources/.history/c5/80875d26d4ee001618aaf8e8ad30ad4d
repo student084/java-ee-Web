@@ -35,15 +35,6 @@ public class BasicServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		System.out.println("doPost");
-		
-		String username = req.getParameter("username");
-		
-		if(username != null && username.equals("amaker")){
-			//req.getRequestDispatcher("/Success.html").forward(req, resp);
-			resp.sendRedirect("http://www.cn.bing.com");
-		}else{
-			req.getRequestDispatcher("/Failure.html").forward(req, resp);
-		}
 	}
 
 //	@Override

@@ -40,7 +40,7 @@ public class BasicServlet extends HttpServlet {
 		
 		if(username != null && username.equals("amaker")){
 			//req.getRequestDispatcher("/Success.html").forward(req, resp);
-			resp.sendRedirect("http://www.cn.bing.com");
+			req.sendRedirect("http://www.cn.bing.com");
 		}else{
 			req.getRequestDispatcher("/Failure.html").forward(req, resp);
 		}

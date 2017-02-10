@@ -2,6 +2,7 @@ package com.amaker.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Enumeration;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -37,7 +38,22 @@ public class RegisterServlet extends HttpServlet {
 	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+		
+		Enumeration enu = request.getParameterNames();
+		
+		while(enu.hasMoreElements()){
+			String name = (String)enu.nextElement();
+			if(name != null && name.equals("hobby")){
+				String[] hobby = request.getParameterValues("hobby");
+				for(int i = 0; i < hobby.length; i ++){
+					System.out.println(hobby[i]);
+				}
+			}else{
+				String value = request.getParameter(name);
+				System.out.println(value);	
+			}
+		}
+		
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		out.println("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">");

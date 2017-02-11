@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="17" version="2.0">
+<workbench progressCount="40" version="2.0">
 <workbenchAdvisor/>
-<window height="728" maximized="true" width="1024" x="-1490" y="63">
+<window height="728" maximized="true" width="1024" x="-1927" y="-86">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -27,11 +27,12 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="com.genuitec.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.genuitec.eclipse.webdesigner3.editors.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.webdesigner3.editors.jsp" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.genuitec.ui.browser.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.webdesigner3.editors.html" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -48,15 +49,11 @@
 </folder>
 </info>
 </editorArea>
-<editor id="com.genuitec.eclipse.webdesigner3.editors.html" name="MyHtml.html" partName="MyHtml.html" path="D:/Program Files/apache-tomcat-7.0.75/webapps/java-ee-Web/ServletDasic/WebRoot/MyHtml.html" title="MyHtml.html" tooltip="ServletDasic/WebRoot/MyHtml.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ServletDasic/WebRoot/MyHtml.html"/>
+<editor activePart="true" focus="true" id="com.genuitec.eclipse.editor.webapp25" name="web.xml" partName="web.xml" path="D:/Program Files/apache-tomcat-7.0.75/webapps/java-ee-Web/ServletSession/WebRoot/WEB-INF/web.xml" title="web.xml" tooltip="ServletSession/WebRoot/WEB-INF/web.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ServletSession/WebRoot/WEB-INF/web.xml"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BasicServlet.java" partName="BasicServlet.java" path="D:/Program Files/apache-tomcat-7.0.75/webapps/java-ee-Web/ServletDasic/src/com/amaker/servlet/BasicServlet.java" title="BasicServlet.java" tooltip="ServletDasic/src/com/amaker/servlet/BasicServlet.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ServletDasic/src/com/amaker/servlet/BasicServlet.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="2" selectionOffset="674" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="com.genuitec.eclipse.editor.webapp25" name="web.xml" partName="web.xml" path="D:/Program Files/apache-tomcat-7.0.75/webapps/java-ee-Web/ServletDasic/WebRoot/WEB-INF/web.xml" title="web.xml" tooltip="ServletDasic/WebRoot/WEB-INF/web.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ServletDasic/WebRoot/WEB-INF/web.xml"/>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" partName="index.jsp" path="D:/Program Files/apache-tomcat-7.0.75/webapps/java-ee-Web/ServletSession/WebRoot/index.jsp" title="index.jsp" tooltip="ServletSession/WebRoot/index.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ServletSession/WebRoot/index.jsp"/>
 </editor>
 </editors>
 <views>
@@ -72,6 +69,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Warnings (5 items)"/>
+<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -239,8 +238,8 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.2" ratioLeft="200" ratioRight="800" relationship="2" relative="cvslocation"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@22928095" ratio="0.73622507" ratioLeft="1256" ratioRight="450" relationship="2" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.24059041" ratioLeft="326" ratioRight="1029" relationship="2" relative="cvslocation"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@22928095" ratio="0.8780774" ratioLeft="1498" ratioRight="208" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -257,7 +256,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottom" ratio="0.6075269" ratioLeft="565" ratioRight="365" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.7591398" ratioLeft="706" ratioRight="224" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -285,7 +284,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomleft" ratio="0.54950494" ratioLeft="333" ratioRight="273" relationship="4" relative="topleft">
+<info folder="true" part="bottomleft" ratio="0.71505374" ratioLeft="665" ratioRight="265" relationship="4" relative="topleft">
 <folder activePageID="uky.article.imageviewer.views.ImageView" appearance="2" expanded="2">
 <page content="uky.article.imageviewer.views.ImageView" label="Image Preview"/>
 <page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
@@ -302,15 +301,134 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" path="/ServletDasic/WebRoot/MyHtml.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ServletDasic/src/com/amaker/servlet/BasicServlet.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.editor.webapp25" path="/ServletDasic/WebRoot/WEB-INF/web.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ServletSession/src/com/amaker/servlet/TestSession.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ServletSession/src/com/amaker/servlet/TestSession2.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/ServletSession/WebRoot/WEB-INF/web.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ServletSession/src/com/amaker/test/CallableStatementTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ServletSession/src/com/amaker/dao/impl/UserDaoImplTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ServletSession/src/com/amaker/dao/impl/UserDaoImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ServletSession/src/com/amaker/dao/impl/MealDaoImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" path="/ServletSession/WebRoot/MyHtml.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.editor.webapp25" path="/ServletSession/WebRoot/WEB-INF/web.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ServletSession/src/com/amaker/servlet/LoginServlet.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/ServletSession/WebRoot/Login.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/ServletSession/WebRoot/Welcome.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ServletSession/src/com/amaker/bean/User.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.editor.webapp25" path="/ServletSession/WebRoot/WEB-INF/web.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/ServletSession/WebRoot/index.jsp"/>
 </editors>
-<item historyLabel="MyHtml.html" index="0"/>
-<item historyLabel="BasicServlet.java" index="1">
-<position info="not_deleted" x="674" y="2"/>
+<item historyLabel="TestSession2.java" index="1">
+<position info="not_deleted" x="2224" y="0"/>
 </item>
-<item active="true" historyLabel="web.xml" index="2"/>
+<item historyLabel="TestSession2.java" index="1">
+<position info="not_deleted" x="2205" y="0"/>
+</item>
+<item historyLabel="TestSession2.java" index="1">
+<position info="not_deleted" x="998" y="5"/>
+</item>
+<item historyLabel="TestSession2.java" index="1">
+<position info="not_deleted" x="1188" y="0"/>
+</item>
+<item historyLabel="TestSession2.java" index="1">
+<position info="not_deleted" x="1219" y="0"/>
+</item>
+<item historyLabel="TestSession2.java" index="1">
+<position info="not_deleted" x="1677" y="0"/>
+</item>
+<item historyLabel="web.xml" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="TestSession.java" index="0">
+<position info="not_deleted" x="1747" y="0"/>
+</item>
+<item historyLabel="CallableStatementTest.java" index="3">
+<position info="not_deleted" x="792" y="0"/>
+</item>
+<item historyLabel="TestSession.java" index="0">
+<position info="not_deleted" x="1747" y="0"/>
+</item>
+<item historyLabel="web.xml" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UserDaoImplTest.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UserDaoImpl.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MealDaoImpl.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MyHtml.html" index="7"/>
+<item historyLabel="web.xml" index="8"/>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="2327" y="0"/>
+</item>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1794" y="0"/>
+</item>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1321" y="0"/>
+</item>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1320" y="0"/>
+</item>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1361" y="0"/>
+</item>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1794" y="0"/>
+</item>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1430" y="0"/>
+</item>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1522" y="0"/>
+</item>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1601" y="0"/>
+</item>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1672" y="0"/>
+</item>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1712" y="0"/>
+</item>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1789" y="0"/>
+</item>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1777" y="0"/>
+</item>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1567" y="0"/>
+</item>
+<item historyLabel="MyHtml.html" index="7"/>
+<item historyLabel="Login.jsp" index="10"/>
+<item historyLabel="Welcome.jsp" index="11"/>
+<item historyLabel="MyHtml.html" index="7"/>
+<item historyLabel="Login.jsp" index="10"/>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1567" y="0"/>
+</item>
+<item historyLabel="Login.jsp" index="10"/>
+<item historyLabel="Welcome.jsp" index="11"/>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1373" y="0"/>
+</item>
+<item historyLabel="User.java" index="12">
+<position info="not_deleted" x="41" y="4"/>
+</item>
+<item historyLabel="Welcome.jsp" index="11"/>
+<item historyLabel="Login.jsp" index="10"/>
+<item historyLabel="LoginServlet.java" index="9">
+<position info="not_deleted" x="1373" y="0"/>
+</item>
+<item historyLabel="Login.jsp" index="10"/>
+<item historyLabel="web.xml" index="8"/>
+<item historyLabel="web.xml" index="13"/>
+<item historyLabel="index.jsp" index="14"/>
+<item active="true" historyLabel="web.xml" index="13"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -328,17 +446,38 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.editor.webapp25" name="web.xml" tooltip="ServletDasic/WebRoot/WEB-INF/web.xml">
-<persistable path="/ServletDasic/WebRoot/WEB-INF/web.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" tooltip="ServletSession/WebRoot/index.jsp">
+<persistable path="/ServletSession/WebRoot/index.jsp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BasicServlet.java" tooltip="ServletDasic/src/com/amaker/servlet/BasicServlet.java">
-<persistable path="/ServletDasic/src/com/amaker/servlet/BasicServlet.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.editor.webapp25" name="web.xml" tooltip="ServletSession/WebRoot/WEB-INF/web.xml">
+<persistable path="/ServletSession/WebRoot/WEB-INF/web.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" name="MyHtml.html" tooltip="ServletDasic/WebRoot/MyHtml.html">
-<persistable path="/ServletDasic/WebRoot/MyHtml.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="User.java" tooltip="ServletSession/src/com/amaker/bean/User.java">
+<persistable path="/ServletSession/src/com/amaker/bean/User.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="HttpServlet.class" tooltip="javax.servlet.http.HttpServlet">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=ServletDasic/D:\/Users\/willj\/MyEclipse\/Common\/plugins\/com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\/data\/libraryset\/EE_5\/javaee.jar&lt;javax.servlet.http(HttpServlet.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="Welcome.jsp" tooltip="ServletSession/WebRoot/Welcome.jsp">
+<persistable path="/ServletSession/WebRoot/Welcome.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="Login.jsp" tooltip="ServletSession/WebRoot/Login.jsp">
+<persistable path="/ServletSession/WebRoot/Login.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginServlet.java" tooltip="ServletSession/src/com/amaker/servlet/LoginServlet.java">
+<persistable path="/ServletSession/src/com/amaker/servlet/LoginServlet.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.html" name="MyHtml.html" tooltip="ServletSession/WebRoot/MyHtml.html">
+<persistable path="/ServletSession/WebRoot/MyHtml.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MealDaoImpl.java" tooltip="ServletSession/src/com/amaker/dao/impl/MealDaoImpl.java">
+<persistable path="/ServletSession/src/com/amaker/dao/impl/MealDaoImpl.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserDaoImpl.java" tooltip="ServletSession/src/com/amaker/dao/impl/UserDaoImpl.java">
+<persistable path="/ServletSession/src/com/amaker/dao/impl/UserDaoImpl.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserDaoImplTest.java" tooltip="ServletSession/src/com/amaker/dao/impl/UserDaoImplTest.java">
+<persistable path="/ServletSession/src/com/amaker/dao/impl/UserDaoImplTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CallableStatementTest.java" tooltip="ServletSession/src/com/amaker/test/CallableStatementTest.java">
+<persistable path="/ServletSession/src/com/amaker/test/CallableStatementTest.java"/>
 </file>
 </mruList>
 </workbench>

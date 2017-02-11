@@ -2,10 +2,10 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
-			<item value="ServletDasic"/>
+			<item value="ServletSession"/>
 		</list>
 		<list key="artifactId">
-			<item value="ServletDasic"/>
+			<item value="ServletSession"/>
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>

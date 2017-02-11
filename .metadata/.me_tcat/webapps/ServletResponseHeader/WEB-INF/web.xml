@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PrintExcel</servlet-name>
+    <servlet-class>com.amaker.servlet.PrintExcel</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PrintImage</servlet-name>
+    <servlet-class>com.amaker.servlet.PrintImage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RefreshServlet</servlet-name>
+    <servlet-class>com.amaker.servlet.RefreshServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CookieServlet</servlet-name>
+    <servlet-class>com.amaker.servlet.CookieServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TestCookie</servlet-name>
+    <servlet-class>com.amaker.servlet.TestCookie</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TestVisitor</servlet-name>
+    <servlet-class>com.amaker.servlet.TestVisitor</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PrepareLogin</servlet-name>
+    <servlet-class>com.amaker.servlet.PrepareLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.amaker.servlet.LoginServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>PrintExcel</servlet-name>
+    <url-pattern>/servlet/PrintExcel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrintImage</servlet-name>
+    <url-pattern>/servlet/PrintImage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RefreshServlet</servlet-name>
+    <url-pattern>/servlet/RefreshServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookieServlet</servlet-name>
+    <url-pattern>/servlet/CookieServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestCookie</servlet-name>
+    <url-pattern>/servlet/TestCookie</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestVisitor</servlet-name>
+    <url-pattern>/servlet/TestVisitor</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrepareLogin</servlet-name>
+    <url-pattern>/servlet/PrepareLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

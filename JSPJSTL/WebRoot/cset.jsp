@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*, com.amaker.bean.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'cout.jsp' starting page</title>
+    <title>My JSP 'cset.jsp' starting page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -23,20 +23,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <c:out value="value"/><br>
-    <%
-    int age = 30;
-    request.setAttribute("age", new Integer(age));
-     %>
-    ${age }
-    <br>
-    <jsp:useBean id="per" class="com.amaker.bean.Person"/>
-    <jsp:setProperty property="age" name="per" value="30"/>
-    <jsp:setProperty property="name" name="per" value="amaker"/>
-    
-    ${per.age }
-    ${per.name }
-    <p>if ${name } is not exist , \${name } == maker as the default value</p>
-    <c:out value="${name}" default="maker"></c:out>
+  <% 
+  	//request.setAttribute("name", "amaker");
+  %>
+  <c:set value="amaker2" var="name" scope="request"></c:set>
+  ${name }
+  
+  <c:set var="age">30</c:set>
+  <c:out value="${age }"></c:out>
+  
+  <jsp:useBean id="per" class="com.amaker.bean.Person"></jsp:useBean>
+  <c:set target="${per }" property="age" value="50"></c:set>
+  <c:set target="${per }" property="name">jack</c:set>
+  
+  ${per.age }
+  ${per.name }
   </body>
 </html>

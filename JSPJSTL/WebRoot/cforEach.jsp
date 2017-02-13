@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*,com.amaker.bean.*" pageEncoding="ISO-8859-1"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -32,11 +32,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	list.add("A7");
   	list.add("A8");
   	
+  	List perList = new ArrayList();
+  	Person per1 = new Person(12, "name1");
+  	Person per2 = new Person(13, "name2");
+  	Person per3 = new Person(14, "name3");
+  	Person per4 = new Person(15, "name4");
+  	
+  	perList.add(per1);
+  	perList.add(per2);
+  	perList.add(per3);
+  	perList.add(per4);
+  	
   	request.setAttribute("List", list);
+  	request.setAttribute("PerList", perList);
    %>
   <body>
     <c:forEach var="l" items="${List }">
     	<c:out value="${l }"></c:out>
     </c:forEach><br>
+    
+    <c:forEach var="p" items="${PerList }">
+    	<c:out value="${p.name }"></c:out>
+    	<c:out value="${p.age }"></c:out>
+    </c:forEach>
   </body>
 </html>

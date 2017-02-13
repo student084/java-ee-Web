@@ -51,8 +51,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<c:out value="${l }"></c:out>
     </c:forEach><br>
     
-    <c:forEach var="p" items="${PerList }">
+    <c:forEach var="p" items="${PerList }" varStatus="st">
     	<c:out value="${p.name }"></c:out>
+    	<c:out value="${st.index }"></c:out>
     	<c:out value="${p.age }"></c:out>
     </c:forEach>
     <hr>

@@ -60,5 +60,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<c:out value="${i }"></c:out>
     </c:forEach>
     <hr>
+     <c:forEach var="i1" begin="1" end="10" step="2">
+    	<c:out value="${i1 }"></c:out>
+    </c:forEach>
   </body>
 </html>

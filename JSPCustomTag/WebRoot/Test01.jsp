@@ -24,6 +24,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
    <h:hello/> <br>
-   <h:hello2/>
+   <h:hello2/> <br>
+   <h:SelectTag/><br>
+   <h:TagAttribute count="10"/>
   </body>
 </html>

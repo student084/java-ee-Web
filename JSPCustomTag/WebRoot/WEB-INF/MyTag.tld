@@ -18,4 +18,21 @@
   	<tag-class>com.amaker.tag.HelloTag2</tag-class>
   	<body-content>empty</body-content>
   </tag>
+  <tag>
+  	<name>SelectTag</name>
+  	<tag-class>com.amaker.tag.SelectTag</tag-class>
+  	<body-content>empty</body-content>
+  </tag>
+  
+  <tag>
+  <name>TagAttribute</name>
+  <tag-class>com.amaker.tag.TagAttribute</tag-class>
+  <body-content>empty</body-content>
+  
+  <attribute>
+  	<name>count</name>
+  	<required>false</required>
+  	<rtexprvalue>true</rtexprvalue>
+  </attribute>
+  </tag>
 </taglib>

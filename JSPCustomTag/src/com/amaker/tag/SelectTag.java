@@ -50,7 +50,7 @@ public class SelectTag extends TagSupport{
 		
 		Position p4 = new Position();
 		p4.setId(4);
-		p4.setName("Project Manager");
+		p4.setName("PM");
 		
 		List list = new ArrayList();
 		

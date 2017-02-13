@@ -38,5 +38,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   ${per.age }
   ${per.name }
+  <hr>
+  <c:set value="aaa" var="a" scope="request"></c:set>
+  ${requestScope.a }
   </body>
 </html>

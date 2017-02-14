@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'Login.jsp' starting page</title>
+    <title>My JSP 'Register.jsp' starting page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -23,23 +23,25 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  ${error}
-  ${msg }
-   <form name="f1" id="f1" action="${basePath}servlet/Login" method="post">
+  ${error }
+   <form name="f1" id="f1" action="${basePath}servlet/Register" method="post">
       <table border="0">
         <tr>
           <td>Login:</td>
-          <td><input type="text" name="login" id="login"></td>
+          <td><input type="text" name="login"></td>
         </tr>
         <tr>
           <td>Password:</td>
-          <td><input type="password" name="password" id="password"></td>
+          <td><input type="password" name="password"></td>
         </tr> 
         <tr>
-          <td colspan="2" align="center"><input type="submit" value="submit"></td>
+          <td>rePassword:</td>
+          <td><input type="password" name="repassword"></td>
+        </tr> 
+        <tr>
+          <td colspan="2" align="center"><input type="submit" value="Register"></td>
         </tr>
         <tr>
-          <td colspan="2" align="center"><a href="${basePath}Pages/Register.jsp">Register</a></a></td>
         </tr>
       </table>
     </form>

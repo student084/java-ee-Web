@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.amaker.bean.User;
+import com.amaker.daoImp.UserDaoImp;
 import com.amaker.util.DBUtil;
 
 /*
@@ -76,54 +78,30 @@ public class Login extends HttpServlet {
 			throws ServletException, IOException {
 		String login = request.getParameter("login");
 		String password = request.getParameter("password");
-		System.out.println("doPost");
-		if(login != null && password != null){
+		User user = new User();
+		user.setLogin(login);
+		user.setPassWord(password);
+		
+		UserDaoImp u = new UserDaoImp();
+		if(!u.check(user)){	
+			//An illegal login post
+			String msg = "’À∫≈ªÚ√‹¬Î¥ÌŒÛ£¨«Î÷ÿ–¬µ«¬Ω";
+			request.setAttribute("error", msg);
+					
+			//return to Login.jsp
+			request.getRequestDispatcher("/Pages/Login.jsp").forward(request, response);
+					
+		}else{
+			//An legal login post
+			//Set session
+			HttpSession session = request.getSession();
+					
+			session.setAttribute("username", login);
+			//forward to the success page
+			request.getRequestDispatcher("/Pages/Application/Home/ImgView.jsp").forward(request, response);
 			
-			DBUtil util = new DBUtil();
-			Connection conn = util.openConnection();
-			
-			String sql = "select * from usertable where login = ? and password = ?";
-			
-			try {
-				PreparedStatement pst = conn.prepareStatement(sql);	
-				
-				pst.setString(1, login);
-				pst.setString(2, password);
-				
-				ResultSet rs = pst.executeQuery();
-				System.out.println(login);
-				if(!rs.next()){
-					
-					//An illegal login post
-					String msg = "’À∫≈ªÚ√‹¬Î¥ÌŒÛ£¨«Î÷ÿ–¬µ«¬Ω";
-					request.setAttribute("error", msg);
-					
-					//return to Login.jsp
-					request.getRequestDispatcher("/Pages/Login.jsp").forward(request, response);
-					
-				}else{
-					
-					//An legal login post
-					//Set session
-					HttpSession session = request.getSession();
-					
-					session.setAttribute("username", login);
-					//forward to the success page
-					request.getRequestDispatcher("/Pages/Application/Home/ImgView.jsp").forward(request, response);
-					
 				}
-				
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} finally{
-				
-				//close the connection
-				util.closeConnection(conn);
-			}
 		}
-	}
-
 	/**
 	 * Initialization of the servlet. <br>
 	 *

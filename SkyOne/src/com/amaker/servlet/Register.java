@@ -8,6 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.amaker.bean.User;
+import com.amaker.daoImp.UserDaoImp;
+
 
 /*
 ******************************************************************************
@@ -24,12 +27,12 @@ import javax.servlet.http.HttpServletResponse;
 ******************************************************************************
 */
 
-public class Registe extends HttpServlet {
+public class Register extends HttpServlet {
 
 	/**
 	 * Constructor of the object.
 	 */
-	public Registe() {
+	public Register() {
 		super();
 	}
 
@@ -53,20 +56,6 @@ public class Registe extends HttpServlet {
 	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
-		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-		out.println("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">");
-		out.println("<HTML>");
-		out.println("  <HEAD><TITLE>A Servlet</TITLE></HEAD>");
-		out.println("  <BODY>");
-		out.print("    This is ");
-		out.print(this.getClass());
-		out.println(", using the GET method");
-		out.println("  </BODY>");
-		out.println("</HTML>");
-		out.flush();
-		out.close();
 	}
 
 	/**
@@ -82,19 +71,29 @@ public class Registe extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-		out.println("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">");
-		out.println("<HTML>");
-		out.println("  <HEAD><TITLE>A Servlet</TITLE></HEAD>");
-		out.println("  <BODY>");
-		out.print("    This is ");
-		out.print(this.getClass());
-		out.println(", using the POST method");
-		out.println("  </BODY>");
-		out.println("</HTML>");
-		out.flush();
-		out.close();
+		String login = request.getParameter("login");
+		String password = request.getParameter("password");
+		String rePassword = request.getParameter("repassword");
+		
+		if(password.equals(rePassword) && !password.equals(" ") && login != null && password != null && !login.equals(" ")){
+			
+			//insert the user's information
+			User user = new User();
+			user.setLogin(login);
+			user.setPassWord(password);
+			
+			UserDaoImp u = new UserDaoImp();
+			u.register(user);
+			
+			request.setAttribute("msg", "register successed");
+			request.getRequestDispatcher("/Pages/Login.jsp").forward(request, response);
+			
+		}else{
+			
+			// there are some illegal input when register
+			request.setAttribute("error", "there are some illegal input when register");
+			request.getRequestDispatcher("/Pages/Register.jsp").forward(request, response);
+		}
 	}
 
 	/**

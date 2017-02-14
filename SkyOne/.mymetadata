@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="SkyOne"
+  id="myeclipse.1487066867987"
+  context-root="/SkyOne"
+  j2ee-spec="5.0"
+  archive="SkyOne.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

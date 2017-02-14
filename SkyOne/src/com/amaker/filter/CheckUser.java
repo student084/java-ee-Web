@@ -25,7 +25,8 @@ public class CheckUser implements Filter{
 		HttpServletRequest request = (HttpServletRequest) req;
 		HttpServletResponse response = (HttpServletResponse)rep;
 		HttpSession session =  request.getSession();
-		if(session.getAttribute("login").toString().length() > 0){
+		if(session.getAttribute("login") != null){
+			System.out.println(session.getAttribute("login").toString());
 			//legal request
 			chain.doFilter(req, rep);
 			

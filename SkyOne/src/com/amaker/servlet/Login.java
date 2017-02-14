@@ -96,7 +96,7 @@ public class Login extends HttpServlet {
 			//Set session
 			HttpSession session = request.getSession();
 					
-			session.setAttribute("username", login);
+			session.setAttribute("login", login);
 			//forward to the success page
 			request.getRequestDispatcher("/Pages/Application/Home/ImgView.jsp").forward(request, response);
 			

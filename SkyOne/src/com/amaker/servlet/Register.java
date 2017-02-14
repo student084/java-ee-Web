@@ -75,8 +75,12 @@ public class Register extends HttpServlet {
 		String password = request.getParameter("password");
 		String rePassword = request.getParameter("repassword");
 		
-		if(password.equals(rePassword) && !password.equals(" ") && login != null && password != null && !login.equals(" ")){
+		if(password.equals(rePassword) && !password.equals("") && login != null && password != null && !login.equals("")){
 			
+//			System.out.println("--" + login + "--");
+//			System.out.println(password);
+//			System.out.println(rePassword);
+//			
 			//insert the user's information
 			User user = new User();
 			user.setLogin(login);

@@ -11,7 +11,7 @@
   </filter>
   <filter-mapping>
   <filter-name>CheckUser</filter-name>
-  <url-pattern>/Pages/Appication/*</url-pattern>
+  <url-pattern>/Pages/Application/*</url-pattern>
   </filter-mapping>
   <servlet>
     <description>This is the description of my J2EE component</description>

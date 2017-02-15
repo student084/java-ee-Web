@@ -8,6 +8,8 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
+import com.amaker.form.LoginForm;
+
 public class LoginAction extends Action{
 
 	@Override
@@ -17,8 +19,13 @@ public class LoginAction extends Action{
 		
 		System.out.println("LoginAction excute ......");
 		
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
+		//String username = request.getParameter("username");
+		//String password = request.getParameter("password");
+		
+		LoginForm loginForm = (LoginForm)form;
+		
+		String username = loginForm.getUsername();
+		String password = loginForm.getPassword();
 		
 		if(username.equals("amaker")){
 			

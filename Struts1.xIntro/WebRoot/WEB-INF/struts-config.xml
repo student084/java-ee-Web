@@ -6,12 +6,18 @@
           "http://struts.apache.org/dtds/struts-config_1_3.dtd">
 
 <struts-config>
+
+	<form-beans>
+		<form-bean name="loginForm" type="com.amaker.form.LoginForm"></form-bean>
+	</form-beans>
+	
 	<action-mappings>
-		<action path="/login" type="com.amaker.action.LoginAction">
+		<action path="/login" type="com.amaker.action.LoginAction" name="loginForm">
 			
 			<forward name="success" path="/Success.jsp"></forward>
 			<forward name="failure" path="/Failure.jsp"></forward>
 		</action>
 	</action-mappings>
+	
 </struts-config>
 

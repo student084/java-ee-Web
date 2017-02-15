@@ -22,12 +22,15 @@ public class LoginAction extends Action{
 		
 		if(username.equals("amaker")){
 			
-			request.getRequestDispatcher("Success.jsp").forward(request, response);
+			//request.getRequestDispatcher("Success.jsp").forward(request, response);
+			return mapping.findForward("success");
+			
 		}else{
 			
-			request.getRequestDispatcher("Failure.jsp").forward(request, response);
+			//request.getRequestDispatcher("Failure.jsp").forward(request, response);
+			return mapping.findForward("failue");
 		}
-		return null;
+		//return null;
 	}
 	
 }

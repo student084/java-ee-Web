@@ -27,7 +27,7 @@ structs 工程创建的步骤
 	</servlet-mapping>
 4、创建com.amaker.action，创建LoginAction类，继承Action,@Overload execute(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response)
-	----------------------------------------------------------------
+	-----------------------方法一----------------------------------------
 	public class LoginAction extends Action{
 
 	@Override
@@ -52,7 +52,48 @@ structs 工程创建的步骤
 	
 	}
 	
-	----------------------------------------------------------------
+	----------------------------------方法二------------------------------
+	
+	配置struct-config.xml，创建一个forward
+	
+	<struts-config>
+	<action-mappings>
+		<action path="/login" type="com.amaker.action.LoginAction">
+			
+			<forward name="success" path="/Success.jsp"></forward>
+			<forward name="failure" path="/Failure.jsp"></forward>
+		</action>
+	</action-mappings>
+	</struts-config>
+	
+	LoginAction的代码改为：
+	*********
+	@Override
+	public ActionForward execute(ActionMapping mapping, ActionForm form,
+			HttpServletRequest request, HttpServletResponse response)
+			throws Exception {
+		
+		System.out.println("LoginAction excute ......");
+		
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		
+		if(username.equals("amaker")){
+			
+			//request.getRequestDispatcher("Success.jsp").forward(request, response);
+			//findForward by name in struts-config.xml
+			return mapping.findForward("success");
+			
+		}else{
+			
+			//request.getRequestDispatcher("Failure.jsp").forward(request, response);
+			return mapping.findForward("failue");
+		}
+		//return null;
+	}
+	********
+	此时若想改变成功或失败的页面，直接改配置文件的path属性即可，不改源文件
+	--------------------------------------------------------------------
 	
 5、在struts-config.xml配置xxxAction
 	//path:表示调用时用的名，调用时使用"login.do"调用,eg: <form name="f1" id="f1" action="<%=path %>/login.do" >

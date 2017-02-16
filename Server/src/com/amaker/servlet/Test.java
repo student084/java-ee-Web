@@ -58,10 +58,18 @@ public class Test extends HttpServlet {
 			throws ServletException, IOException {
 		String action = request.getParameter("action");
 		if(action != null){
+			PrintWriter out = response.getWriter();
 			System.out.println(action); 
 			if(action.equals("send_pass")){
-				PrintWriter out = response.getWriter();
+				
 				out.print("{\"status\":1}");
+				
+				out.flush();
+				out.close();
+			}else if(action.equals("login")){
+				
+				out.print("{\"status\": 1, \"token\":\"e4r34fdjfd338dsw8\"}");
+				
 				out.flush();
 				out.close();
 			}

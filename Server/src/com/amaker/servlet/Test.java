@@ -95,6 +95,24 @@ public class Test extends HttpServlet {
 						"]}");
 				out.flush();
 				out.close();
+			}else if(action.equals("get_comment")){
+				out.print("" +
+						"{\"status\":1," +
+						"\"page\":1, " +
+						"\"msgId\":\"214323\", " +
+						"\"perpage\":20," +
+						"\"comments\":[" +
+						"{" +
+						"\"content\":\"haadshahahgasa\"," +
+						"\"phone_md5\":\"dsadsafddsffs\""
+						+"}," +
+						"{" +
+						"\"content\":\"hahafahsafaha\"," +
+						"\"phone_md5\":\"dsadfsafddsffs\""
+						+"}" +
+						"]}");
+				out.flush();
+				out.close();
 			}
 		}
 		

@@ -72,6 +72,29 @@ public class Test extends HttpServlet {
 				
 				out.flush();
 				out.close();
+			}else if(action.equals("upload_contacts")){
+				out.print("{\"status\":1}");
+				out.flush();
+				out.close();
+			}else if(action.equals("timeline")){
+				out.print("" +
+						"{\"status\":1," +
+						"\"page\":1, " +
+						"\"perpage\":20," +
+						"\"timeline\":[" +
+						"{" +
+						"\"msg\":\"hahahaha\"," +
+						"\"phone_md5\":\"dsadsafddsffs\"," +
+						"\"msgId\":\"12343\""
+						+"}," +
+						"{" +
+						"\"msg\":\"hahahaha\"," +
+						"\"phone_md5\":\"dsadfsafddsffs\"," +
+						"\"msgId\":\"1233\""
+						+"}" +
+						"]}");
+				out.flush();
+				out.close();
 			}
 		}
 		
